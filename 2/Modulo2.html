@@ -14,10 +14,14 @@
 <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">-->
 <link rel="stylesheet" href="Modulo2.css">
 </head>
+
 <body>
 <!-- Content -->
+<!--La class "card mat-card es la que le pone los margenes a los cuadros"-->
     <div  class="card mat-card" id="firs card">
-        <div id="profile-background"><img src="https://images.ctfassets.net/hrltx12pl8hq/5KiKmVEsCQPMNrbOE6w0Ot/341c573752bf35cb969e21fcd279d3f9/hero-img_copy.jpg?fit=fill&w=800&h=300" alt=""></div>
+        <div id="profile-background">
+            <img src="https://previews.123rf.com/images/monsitj/monsitj1708/monsitj170800091/84856053-c%C3%B3digo-de-programaci%C3%B3n-de-fondo-abstracto-de-la-tecnolog%C3%ADa-de-software-de-software-y-escribir-la-com.jpg" alt="">
+            </div>
         <div id="info" style="padding: 16px;">
             <div id="info-img">
                 <img class="profile-image" src="foto.jpg" alt="">
@@ -26,21 +30,22 @@
             <div id="info-data">
                 <div>
                     <h1>Vanessa Alfonzo</h1>
-                    <div id="info-company">Tester en Axoft</div>
+                    <div id="info-company">
+                       <h2>Tester en Axoft</h2> 
+                    </div>
                     <div id="info-contact">
-                        <span>Buenos Aires (Aregentina)</span>
+                        <span>Buenos Aires (Argentina)</span>
                         <span><a href="#">Información de Contacto</a></span>
                     </div>
                 </div>
                 <ul id="info-details">
-                    <li><a href="">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsLAfKlXjdfYBaqUz6586OhXTcBE-idtOicXikly_gAPaeGtnN9tyBURYoKOA-AfktGFY&usqp=CAU" alt="">
-                        <h2>Axoft</h2>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="http://www.mppef.gob.ve/wp-content/uploads/2017/03/ENAHP.jpg" alt="">
-                        <h2>Escuela Nacional de Administracion y Hacienda Pública</h2>
-                    </a></li>
+                    <li><a href="https://www.axoft.com">
+                        <img width="100px" src="data:image/png;base64,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">   
+                    
+                        </a></li>
+                    <li><a href="http://www.enahp.com/pregrado/modulos/inicio/">
+                    <img  class="school-image" width="150px"  src="http://www.mppef.gob.ve/wp-content/uploads/2017/03/ENAHP.jpg" alt="">
+                  </a></li>  
                 </ul>
             </div>
             <div id="info-actions">
@@ -50,6 +55,112 @@
             </div>
         </div>  
     </div>
+    <div class="card mat-card">
+        <h1>Acerca de</h1>
+        <p>Tester en aseguramiento en calidad de software. Con capacidad para
+            el análisis de requerimiento, diseño de casos de prueba y reporte de
+            bug en páginas web. Especializada en trabajo con metodologías
+            agiles.</p>
+    </div>
+    <div class="card mat-card">
+        <h1>Experiencia</h1>
+        <ul id="experiencia-laboral">
+            <li><b> Analita Tester - QA (07/2022 a la presente fecha)</b></li>      
+            <img width="80px" src="data:image/png;base64,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">   
+>     
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <li><b> Analita Tester - QA (08/2021 al 07/2022)</b></li>
+            <img  width="250px" src="https://ecosistemasglobal.com/wp-content/uploads/2022/06/logov2eco.png" >    
+            <ul>
+                <li>Cliente: Banco Hipotecario</li>
+                <li>Aplicaciones testeadas: BPM, CRM, Homebanking, Contenedor Digital y Chatbot BH.</li>
+                <li>Herramientas de Consulta de datos usadas: Management Studio, Oracle, Razor.</li>
+                <li>Herramienta de Reporte: Jira</li>
+                <li>Metodología Ágil: Scrum y Kanba</li>
+                <li>Análisis de documentación</li>
+                <li>Definición, diseño,gestión y ejecusión de casos de prueba</li>
+                <li>Deteccion, reporte, relevamiento y seguimiento de defectos</li>
+                <li>Elaboracion de informe de avance.</li>
+            </ul>
+
+        </ul>
+    </div>
+    <div class="card mat-card">
+        <h1>Educación</h1>
+            <h3><img  class="school-image" width="150px"  src="http://www.mppef.gob.ve/wp-content/uploads/2017/03/ENAHP.jpg" alt="">
+            Escuela Nacional de Administracion y Hacienda Pública</h3>
+            <h5>Licenciada en Ciencias Fiscales mención Finanzas </h5>
+            <p>Alta capacidad para la elaboración y manejo de planificaciones, control y ejecución de presupuesto, compras, tesorería y contabilidad. Habilidad para liderar, planificar y dirigir grupos de trabajo facilitando el logro de objetivos y metas de una empresa. Facilidad para el aprendizaje y el manejo de programas de gestión. Alto sentido de la organización. Emprendedora y creativa a la hora de buscar soluciones que aceleren el logro de objetivos.</p>
+            <a href="https://drive.google.com/file/d/1G5m2HCN2UnNZWBWW9PIiJl_67KCEKr09/view?usp=sharing"><b>Título</b></a>
+
+    </div>
+    <div class="card mat-card">
+        <h1>Certificaciones</h1>
+        <ul>
+            <li>
+                <h4><img width="50px" src="https://media-exp1.licdn.com/dms/image/C560BAQGv-Dd7A2pQ0g/company-logo_200_200/0/1646458288684?e=1669852800&v=beta&t=ibzElrv6wmx7Y6X4T4V6Wn4bHk8GzwjscrQ8EM2NfWM" alt="">
+                Programación Básica</h4>
+                <p>Argentina Programa</p>
+                <p>Expedición: Junio 2022</p>
+                <a href="https://drive.google.com/file/d/1gK_NeBkOBUs5rpHNBFgc8JbsoxRq7IRd/view">Credencial</a>
+            </li>
+            <li>
+                <h4><img width="50px" src="https://media-exp1.licdn.com/dms/image/C4D0BAQE085qupw4Z-w/company-logo_200_200/0/1606791349939?e=1669852800&v=beta&t=BhC_jhj5V5vQVDVQAF-Fy1w6pUMD8mSQjFRPt9OqxHA" alt="">Testing QA Calidad del Software</h4>
+                <p>Agencia de aprendisaje a los largo de la vida</p>
+                <p>Expedición: Diciembre 2021</p>
+                <a href="https://drive.google.com/file/d/12gy8juHJQqHNZIpaI1gHFPOeBhnMrmDd/view">Credencial</a>
+            </li>
+            <li>
+                <h4><img width="50px" src="https://media-exp1.licdn.com/dms/image/C4D0BAQH2bbG2o4qkpA/company-logo_200_200/0/1622204276344?e=1669852800&v=beta&t=9yjpxfyjPtEPdoB9FLkd8bwpRZ4hJ8Fxzjt_aRYdsDY" alt="">Introducción a la Programación</h4>
+                <p>Fundación Telefónica</p>
+                <p>Expedición: Septiembre 2021</p>
+                <a href="https://drive.google.com/file/d/1N6LfCB8xmNwVIJCMu6Ayu1S-pMfZKX5R/view">Credencial</a>
+            </li>
+            <li>
+                <h4><img width="50px" src="https://media-exp1.licdn.com/dms/image/C4D0BAQFQr9e68bBOPQ/company-logo_200_200/0/1626275253364?e=1669852800&v=beta&t=SMRTUaBjaaWArx0nJXvI9W8DnKAabgcmNpOxdDhWBGg" alt="">Master SQL Server</h4>
+                <p>Udemy</p>
+                <p>Expedición: Agosto 2021</p>
+                <a href="https://www.udemy.com/certificate/UC-41146eee-361f-43aa-b2a9-ee15db788904/">Credencial</a>
+            </li>
+            <li>
+                <h4><img width="50px" src="https://media-exp1.licdn.com/dms/image/C4D0BAQFQr9e68bBOPQ/company-logo_200_200/0/1626275253364?e=1669852800&v=beta&t=SMRTUaBjaaWArx0nJXvI9W8DnKAabgcmNpOxdDhWBGg" alt="">Scrum Master</h4>
+                <p>Udemy</p>
+                <p>Expedición: Julio 2021</p>
+                <a href="https://www.udemy.com/certificate/UC-0b7306fb-552b-49ef-9bb7-b7082275bc87/">Credencial</a>
+            </li>
+            <li>
+                <h4><img width="50px" src="https://media-exp1.licdn.com/dms/image/C4D0BAQFQr9e68bBOPQ/company-logo_200_200/0/1626275253364?e=1669852800&v=beta&t=SMRTUaBjaaWArx0nJXvI9W8DnKAabgcmNpOxdDhWBGg" alt="">Consultor SAP modulo MM</h4>
+                <p>Udemy</p>
+                <p>Expedición: Septiembre 2020</p>
+                <a href="https://drive.google.com/file/d/151dO4sTSkJclPE7rhLu2T8bXGqd4N54y/view">Credencial</a>
+            </li>
+            <li>
+                <h4><img width="50px" src="https://media-exp1.licdn.com/dms/image/C4D0BAQGLSvaRkYAfww/company-logo_100_100/0/1519914462142?e=1669852800&v=beta&t=znjayXijmgDHmJ5GYMUFj_V44_X7celmQGxbunylJyA" alt="Introducción al Sistema SAP">Introducción al Sistema SAP</h4>
+                <p>Consejo Profesional de Ciencias Informáticas</p>
+                <p>Expedición: Mayo 2019</p>
+                <a href="https://drive.google.com/file/d/1yZJOlhb0j9oERnwiWElVrNfLFePWuI3K/view">Credencial</a>
+            </li>
+            <li>
+                <h4><img width="100px" src="https://www.kentronsistemas.com/wp-content/uploads/2019/07/Logo-kentron-e1563330431527.png" alt="Asistente de Impuestos y Ordenación de Pagos"></h4>
+                <p>Kentron Sistema de Información</p>
+                <p>Expedición: Abril 2010</p>
+                <a href="https://drive.google.com/file/d/1BYz4SiZbzBlQU5sbAy2QUXPen_qIy51g/view">Credencial</a>
+            </li>
+        </ul>
+    </div>
+
+
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!--Acá voy a copiar loslink de CDN a traves de jsDelivr que aparecen en el modulo de lectura-->
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>-->
