@@ -109,3 +109,12 @@ ul.items-list li div.data-container a {
     color: black;
 
 }
+
+.btn-edit{
+    max-width: 50px;
+    height: 20px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
