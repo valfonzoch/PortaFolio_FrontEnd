@@ -1,20 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
 /*Este define los margenes de los cuadros*/
+/*1*/
 .mat-card {
     border-radius: 32px;
     margin: 20px 20px;
-    padding: 10px; /*Es como la compresion del contendio dentro del cuadro*/
+    padding: 10px;
     border-color: #0a66c2;
 }
 .mat-card#firs-card {
     padding: 0;
 }
-
-/*div#profile-background {
+/*Define el formato de la imagen que esta de primera como fondo de cabecera*/
+div#profile-background {
     display: flex;
     z-index: 1;
-}*/
-
-/*Define el formato de la imagen que esta de primera como fondo de cabecera*/
+}
 div#profile-background img {
     width: 100%;
     border-radius: 32px 32px 0px 0px; /*redondea los bordes superiores de las puntas de la imagen*/
@@ -26,34 +26,11 @@ div#profile-background img {
     width: 252px;       
     height: 252px;
     margin-top: -200px;
-    z-index: 1; /*Este sirve para superposicionar las imagenes una encima de otra*/
+    z-index: 2; /*Este sirve para superposicionar las imagenes una encima de otra*/
+    position: relative; 
+    padding: 10px 10px;
+   
 }
-/*div es la eiqueta donde se encuentra, el # se refiere al id, luego viene el nombre*/
-div#info-actions {
-    display: flex;
-}
-div#info-actions button {
-    margin-right: 8px;
-}
-
-div#info-contact span {
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-div#info-contac span a {
-    color: #0a66c2;
-    touch-action: manipulation;
-    text-decoration: none;
-}
-
-div#info-company {
-    font-size: 1.2rem;
-    font-weight: 200;
-    line-height: 1.25;
-    
-}
-
 div#info-data {
     display: flex; /*Este los alinea a la derecha*/
     justify-content: space-between; /*Este hace que exista un espacio entre las dos alineaciones*/
@@ -75,11 +52,11 @@ div#info-data ul#info-details {
     text-align: right;
 }
 
-/*div#info-data ul#details li a {
+div#info-data ul#details li a {
     color: black;
     display: flex;
     text-decoration: none;
-} NO SE A QUE SE ESTA APLICANDO NO VEO MODIFICACIONES*/
+} 
 
 div#info-data ul#details li a h2 {
     font-size: 1rem;
@@ -91,6 +68,30 @@ div#info-data ul#details li a img {
     width: 32px;
     height: 32px;
     margin-right: 100px;
+}
+div#info-contact span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+div#info-contac span a {
+    color: #0a66c2;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+/*div es la eiqueta donde se encuentra, el # se refiere al id, luego viene el nombre*/
+div#info-actions {
+    display: flex;
+}
+
+div#info-actions button {
+    margin-right: 8px;
+}
+
+div#info-company {
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.25;
+    
 }
 ul.items-list {
     list-style: one inside;
@@ -109,12 +110,25 @@ ul.items-list li div.data-container a {
     color: black;
 
 }
+ .boton1 {
+    padding-left: 17%;
+ }
 
-.btn-edit{
-    max-width: 50px;
-    height: 20px;
-    margin:auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+ .boton1 img {
+    width: 2%;
+    height: 2%;
+ }
+ .boton2 {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+ }
+
+ .boton2 img {
+    width: 2%;
+    height: 2%;
+ }
+
+ div#acerca h1 {
+    text-align: center;
+ }

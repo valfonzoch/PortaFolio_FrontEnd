@@ -4,31 +4,26 @@
     <meta charset="UTF-8">
     <title>Page Title</title>
 <meta name="description" content="Roughly 155 characters">
-<!-- Este es el bootstrap que tengo local, el que descargue-->
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<!--Este es el boostrap que copie del video-->
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICowtJAoU8YZTY5qE0Id1GSseTK6S+L3BlXeVIU" crossorigin="anonymus">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
-<!--Acá voy a copiar loslink de CDN a traves de jsDelivr que aparecen en el modulo de lectura-->
-<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">-->
-<link rel="stylesheet" href="Modulo2.css">
-<!-- Este script es para acceder a diferentes iconos de font awesome-->
-<script src="https://kit.fontawesome.com/695ba7b160.js" crossorigin="anonymous"></script>
+<!-- Este es el bootstrap que tengo local, el que descargue
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="css/Modulo2.css">
 </head>
-
 <body>
-<!-- Content -->
-<!--La class "card mat-card es la que le pone los margenes a los cuadros"-->
+    
     <div  class="card mat-card" id="firs card">
+
         <div id="profile-background">
             <img src="https://previews.123rf.com/images/monsitj/monsitj1708/monsitj170800091/84856053-c%C3%B3digo-de-programaci%C3%B3n-de-fondo-abstracto-de-la-tecnolog%C3%ADa-de-software-de-software-y-escribir-la-com.jpg" alt="">
-            </div>
+        </div>
+
         <div id="info" style="padding: 16px;">
+
             <div id="info-img">
-                <img class="profile-image" src="foto.jpg" alt="">
-                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa-thin fa-pen-to-square"></i></a></div>
+                <img class="profile-image" src="img/foto.jpg" alt="">
+                <div  type="button" class="boton1"><img src="img/icons8-pen-48.png" alt=""></div>
             </div>
+
             <div id="info-data">
                 <div>
                     <h1>Vanessa Alfonzo</h1>
@@ -50,22 +45,25 @@
                   </a></li>  
                 </ul>
             </div>
+
             <div id="info-actions">
                 <button type="button" class="btn btn-primary">Tengo interés en</button>
                 <button type="button" class="btn btn-light">Añadir Sección</button>
                 <button type="button" class="btn btn-light">Más</button>
             </div>
+
         </div>  
+
     </div>
 
     <div class="card mat-card">
-        <div class="card-titles">
-            <h1>Acerca de</h1>
-            <div class="btn-edit" onclick="cambiar_parrafo()"> <!--Cambiar parrafo es el nombre de una funcion-->
-                <a href="#" class="btn-right">
-                    <i class="fa-pen-to-square"></i>
-                </a>
+        <div class="card-titles" id="acerca">
+            <h1 >Acerca de</h1>
+            <span>
+            <div type="button" class="boton2" onclick="cambiar_parrafo()"> <!--Cambiar parrafo es el nombre de una funcion-->
+                <img src="img/icons8-pen-48.png" alt="">
             </div>
+            </span>
             <div>
                 <p id="text-acercade">Tester en aseguramiento en calidad de software. Con capacidad para
             el análisis de requerimiento, diseño de casos de prueba y reporte de
@@ -327,11 +325,11 @@
     </div>
 
 
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
     <!--Acá voy a copiar loslink de CDN a traves de jsDelivr que aparecen en el modulo de lectura-->
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
 
-
+    <script src="ecma_brw.js"></script>
     <!--Contenido de la funcion 1:
 docuemnt: es para acceder al documento que queremos modificar en este caso el html
 getElementById: para acceder y que aparezca el contenido del input
@@ -378,6 +376,10 @@ console. log: para que aparezca por consola. -->
         reader.onerror = function() {
             console.log(reader.error);
         };
+    }
+
+    function foo(){
+        var undefined = 2; 
     }
     
 </script>
